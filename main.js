@@ -1,16 +1,17 @@
-var number;
+var result;
 
 for (number = 1; number < 101; number++){
-    if (number % 3 === 0 && number % 5 === 0) {
-        console.log("FizzBuzz");
+    if (number % 15 === 0) {
+        result = "FizzBuzz";
     }
     else if (number % 3 === 0) {
-        console.log("Fizz")
+        result = "Fizz";
     }
     else if (number % 5 === 0) {
-        console.log("Buzz")
+        result = "Buzz";
     }
     else {
-        console.log(number);
-    }  
+        result = number;
+    }
+    console.log(result)
 }
